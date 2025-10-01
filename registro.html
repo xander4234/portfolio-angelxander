@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Daltonicos Masters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="img/logoDalton2.png" alt="Daltonicos Masters">
+            <h1>Daltonicos<span>Masters</span></h1>
+        </div>
+        <form id="registro-form">
+            <div class="registro-header">
+                <h2>REGISTRO</h2>
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="correo_electronico">Correo electrónico:</label>
+                <input type="email" id="correo_electronico" name="correo_electronico" required>
+            </div>
+            <div class="form-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+            <div class="form-group">
+                <label for="repetir_contrasena">Repetir contraseña:</label>
+                <input type="password" id="repetir_contrasena" name="repetir_contrasena" required>
+            </div>
+            <button type="submit">Registrarse</button>
+        </form>
+        <p class="reg">¿Ya tienes cuenta? <a href="index.html">Iniciar Sesión</a></p>
+        <div id="color-mode"></div>
+    </div>
+    <div id="footer-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

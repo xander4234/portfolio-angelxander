@@ -1,0 +1,458 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  /*background-color: #bc3808;*/
+  background-image: url(img/fondo.png);
+  display: flex;
+  flex-direction: column; /* Ensure body behaves as a column */
+  min-height: 100vh; /* Ensure the body takes full height */
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-size: cover;
+}
+
+.login-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.login-header::before,
+.login-header::after {
+  content: "";
+  flex: 1;
+  border-bottom: 4px solid black;
+  margin-inline: 4px;
+}
+
+.registro-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.registro-header::before,
+.registro-header::after {
+  content: "";
+  flex: 1;
+  border-bottom: 4px solid black;
+  margin-inline: 4px;
+}
+
+/* Top Bar Styles */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 10;
+}
+
+.top-bar img {
+  width: 100px;
+  height: auto;
+}
+
+.top-bar h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+.top-bar h1 span {
+  color: #ffc107;
+}
+
+/* Container Styles */
+.container {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 100px; /* Adjust to position below top bar */
+  margin-bottom: 50px; /* Adjust to position below top bar */
+  flex-grow: 1;
+}
+
+.container .reg{
+    text-align: center;
+    margin-top: 25px;
+}
+/* Header Styles */
+.header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.header img {
+  width: 125px;
+  height: auto;
+  margin-bottom: -20px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h1 span {
+  font-size: 40px;
+  color: #bc3808;
+  margin-bottom: 10px;
+}
+
+p span {
+  color: #bc3808;
+  margin-bottom: 20px;
+}
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0px;
+  font-size: 15px;
+  color: #bc3808;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove border */
+    border-bottom: 3px solid black; /* Add bottom border */
+    font-size: 20px;
+    outline: none; /* Remove outline */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+
+
+/* Link Styles */
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+button {
+  background-color: #bc3808;
+  font-size: 25px;
+  color: #fff;
+  padding: 10px 120px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Make button span the full width */
+}
+
+button:hover {
+  background-color: #333;
+  color: #ffc107;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  margin-top: auto; 
+  width: 100vw; /* Ensure footer takes full width of the viewport */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+footer h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ffc107;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para los radiobuttons */
+.color-mode {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.color-mode label {
+  font-size: 16px;
+  color: #333;
+  margin-right: 10px;
+}
+
+/* Colores normales */
+/*
+.normal-color {
+  background-color: #bc3808;
+  color: #333;
+}
+
+.normal-color .container {
+  background-color: #fff;
+}
+
+.normal-color h1, .normal-color h2 {
+  color: #333;
+}
+
+.normal-color label {
+  color: #bc3808;
+}
+
+.normal-color button {
+  background-color: #bc3808;
+  color: #fff;
+}
+*/
+
+/* --- Estilos Generales --- */
+
+/* Estilos base para la imagen */
+img {
+  transition: filter 0.3s ease; /* Transición suave para el cambio de filtro */
+}
+
+/* --- Estilos para los Radiobuttons y Fondos --- */
+
+
+/* --- Colores Daltonia 1 Protanomalía--- */
+
+/* Estilos de fondo y color de texto para Daltonia 1 */
+/*Fondo*/
+.daltonia1-color {
+  background-color: #9dcea5;
+  color: #9dcea5;
+}
+
+.daltonia1-color .container {
+  background-color: #f4f4f4;
+}
+
+.daltonia1-color h1{
+  color: #006400;
+} 
+.daltonia1-color h2 {
+  color: #198a19;
+}
+
+.daltonia1-color label {
+  color: #006400;
+}
+
+.daltonia1-color button {
+  background-color: #ffc107;
+  color: #000000;
+}
+
+.daltonia1-color button:hover {
+  background-color: #006400; /* Color de fondo del botón en hover para Daltonia 1 */
+  color: #fff; /* Color de texto del botón en hover para Daltonia 1 */
+}
+
+/* Colores Daltonia 1 para el footer */
+.daltonia1-color footer p {
+  background-color: #333;
+  color: #e0e0e0; /* Color del texto para Daltonia 1 */
+}
+
+/* Colores Daltonia 1 para el h1 span */
+.daltonia1-color h1 span {
+  color: #ffc107; /* Color del texto para Daltonia 1 */
+}
+
+/* Aplicación de filtro para imágenes en Daltonia 1 */
+.daltonia1-color img {
+  filter: saturate(150%) hue-rotate(90deg);
+}
+
+/* Aplicación de filtro para el fondo en Daltonia 1 */
+.daltonia1-color::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('img/fondo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: saturate(150%) hue-rotate(90deg);
+  z-index: -1; /* Asegúrate de que esté detrás del contenido */
+  transition: filter 0.3s ease; /* Transición suave para el filtro */
+}
+
+
+
+/* --- Colores Daltonia 2 Deuteranopia--- */
+
+/* Estilos de fondo y color de texto para Daltonia 2 */
+/*Fondo*/
+.daltonia2-color {
+  background-color: #ffecd1;
+  color: #8b0000;
+}
+
+.daltonia2-color .container {
+  background-color: #fff7e6;
+}
+
+.daltonia2-color h1{
+  color: #a50d0d;
+} 
+.daltonia2-color h2 {
+  color: #cf2626;
+}
+
+.daltonia2-color label {
+  color: #8b0000;
+}
+
+.daltonia2-color button {
+  background-color: #000000;
+  color: #fff7e6;
+}
+
+.daltonia2-color button:hover {
+  background-color: #5c0000; /* Color de fondo del botón en hover para Daltonia 2 */
+  color: #fff; /* Color de texto del botón en hover para Daltonia 2 */
+}
+
+/* Colores Daltonia 2 para el footer */
+.daltonia2-color footer p {
+  color: #e0e0e0; /* Color del texto para Daltonia 2 */
+}
+
+/* Colores Daltonia 2 para el h1 span */
+.daltonia2-color h1 span {
+  color: #000000; /* Color del texto para Daltonia 2 */
+}
+
+/* Aplicación de filtro para imágenes en Daltonia 2 */
+.daltonia2-color img {
+  filter: saturate(120%) hue-rotate(180deg);
+}
+
+/* Aplicación de filtro para el fondo en Daltonia 2 */
+.daltonia2-color::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('img/fondo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: saturate(120%) hue-rotate(180deg);
+  z-index: -1; /* Asegúrate de que esté detrás del contenido */
+  transition: filter 0.3s ease; /* Transición suave para el filtro */
+}
+
+
+
+/* --- Colores Daltonia 3 tritanomalia--- */
+
+/* Estilos de fondo y color de texto para Daltonia 3 */
+/*Fondo*/
+.daltonia3-color {
+  background-color: #f5f5f5;
+  color: #0056b3;
+}
+
+.daltonia3-color .container {
+  background-color: #e0e0e0;
+}
+
+.daltonia3-color h1{
+  color: #003d7a;
+} 
+.daltonia3-color h2 {
+  color: #4092e3;
+}
+
+.daltonia3-color label {
+  color: #003d7a;
+}
+
+.daltonia3-color button {
+  background-color: #a50d0d;
+  color: #ffffff;
+}
+
+.daltonia3-color button:hover {
+  background-color: #00796b; /* Color de fondo del botón en hover para Daltonia 3 */
+  color: #fff; /* Color de texto del botón en hover para Daltonia 3 */
+}
+
+/* Colores Daltonia 3 para el footer */
+.daltonia3-color footer p {
+  color: #e0e0e0; /* Color del texto para Daltonia 3 */
+}
+
+/* Colores Daltonia 3 para el h1 span */
+.daltonia3-color h1 span {
+  color: #a50d0d; /* Color del texto para Daltonia 3 */
+}
+
+/* Aplicación de filtro para imágenes en Daltonia 3 */
+.daltonia3-color img {
+  filter: saturate(130%) hue-rotate(45deg);
+}
+
+/* Aplicación de filtro para el fondo en Daltonia 3 */
+.daltonia3-color::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('img/fondo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: saturate(130%) hue-rotate(45deg);
+  z-index: -1; /* Asegúrate de que esté detrás del contenido */
+  transition: filter 0.3s ease; /* Transición suave para el filtro */
+}
+
+
+/* Ajustes para el body */
+body {
+  position: relative; /* Necesario para que los pseudo-elementos se posicionen correctamente */
+}
